@@ -70,6 +70,7 @@ AGAIN:
 		goto DONE;
 	}	
 	freeaddrinfo(result);
+	result = NULL;
 	ret = listen(listen_sock, 1);
 	if (ret == -1) {
 		perror("listen");

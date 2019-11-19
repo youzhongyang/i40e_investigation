@@ -120,6 +120,7 @@ int main(int argc, char* argv[])
 
 AGAIN:
 	sock = INVALID_SOCKET;
+	total_bytes_sent = 0;
 
 	remoteHost = gethostbyname(argv[1]);
 	if (remoteHost == NULL) {
